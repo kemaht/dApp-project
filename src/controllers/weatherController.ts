@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import {
   generateDublinWeatherData,
   generateLondonWeatherData,
-  generateNigeriaWeatherData,
+  generateRomeWeatherData,
   generateFranceWeatherData,
   generateLondonWeatherDailyData,
 } from "../services/weatherService.js";
@@ -28,8 +28,8 @@ export const getWeatherData = async (req: Request, res: Response) => {
       finalWeatherData = generateLondonWeatherData();
     } else if (city === "dublin") {
       finalWeatherData = generateDublinWeatherData();
-    } else if (city === "nigeria") {
-      finalWeatherData = generateNigeriaWeatherData();
+    } else if (city === "rome") {
+      finalWeatherData = generateRomeWeatherData();
     } else if (city === "france") {
       finalWeatherData = generateFranceWeatherData();
     } else {

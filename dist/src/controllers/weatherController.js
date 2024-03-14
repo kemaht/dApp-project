@@ -1,4 +1,4 @@
-import { generateDublinWeatherData, generateLondonWeatherData, generateNigeriaWeatherData, generateFranceWeatherData, generateLondonWeatherDailyData, } from "../services/weatherService.js";
+import { generateDublinWeatherData, generateLondonWeatherData, generateRomeWeatherData, generateFranceWeatherData, generateLondonWeatherDailyData, } from "../services/weatherService.js";
 /**
  * Gets the weather data for a city
  * @param req the request object
@@ -20,8 +20,8 @@ export const getWeatherData = async (req, res) => {
         else if (city === "dublin") {
             finalWeatherData = generateDublinWeatherData();
         }
-        else if (city === "nigeria") {
-            finalWeatherData = generateNigeriaWeatherData();
+        else if (city === "rome") {
+            finalWeatherData = generateRomeWeatherData();
         }
         else if (city === "france") {
             finalWeatherData = generateFranceWeatherData();

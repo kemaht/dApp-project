@@ -26,7 +26,7 @@ export const generateDublinWeatherData = (): WeatherData => {
   return generatedWeatherData;
 };
 
-export const generateNigeriaWeatherData = (): WeatherData => {
+export const generateRomeWeatherData = (): WeatherData => {
   //Generate random weather data
   const generatedWeatherData: WeatherData = {
     temperature: faker.number.int({min: -0, max: 40}),
