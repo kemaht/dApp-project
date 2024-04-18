@@ -3,7 +3,7 @@ import {
   generateDublinWeatherData,
   generateLondonWeatherData,
   generateRomeWeatherData,
-  generateFranceWeatherData,
+  generateParisWeatherData,
   generateLondonWeatherDailyData,
 } from "../services/weatherService.js";
 
@@ -31,7 +31,7 @@ export const getWeatherData = async (req: Request, res: Response) => {
     } else if (city === "rome") {
       finalWeatherData = generateRomeWeatherData();
     } else if (city === "france") {
-      finalWeatherData = generateFranceWeatherData();
+      finalWeatherData = generateParisWeatherData();
     } else {
       // If the city is not london or dublin, we will throw an error
       res.status(404).send("City not found");
