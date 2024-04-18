@@ -4,7 +4,7 @@ import {
   generateLondonWeatherData,
   generateRomeWeatherData,
   generateParisWeatherData,
-  generateLondonWeatherDailyData,
+  generateLondonWeatherDailyData
 } from "../services/weatherService.js";
 
 /**

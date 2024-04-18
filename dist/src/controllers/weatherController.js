@@ -1,4 +1,4 @@
-import { generateDublinWeatherData, generateLondonWeatherData, generateRomeWeatherData, generateParisWeatherData, generateLondonWeatherDailyData, } from "../services/weatherService.js";
+import { generateDublinWeatherData, generateLondonWeatherData, generateRomeWeatherData, generateParisWeatherData, generateLondonWeatherDailyData } from "../services/weatherService.js";
 /**
  * Gets the weather data for a city
  * @param req the request object

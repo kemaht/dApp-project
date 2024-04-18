@@ -1,5 +1,5 @@
 import algosdk from "algosdk";
-import { getClient, getAccount } from "../helpers/helpers.js";
+import { getClient, getAccount } from "../config/config.js";
 export const storeWeatherData = async (data) => {
     try {
         const client = getClient();
